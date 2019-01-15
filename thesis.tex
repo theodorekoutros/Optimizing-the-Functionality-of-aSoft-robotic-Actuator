@@ -87,16 +87,16 @@
 
 % Preface (optional)
 \markright{Preface}
-\include{Preface}
+\include{Sections.tex/Preface}
 
 % Abstract must not be longer than one page per language. English and
 % German abstracts are mandatory.
 \addcontentsline{toc}{section}{\protect\numberline{}{Abstract}}
 \markright{Abstract}
-\include{Abstract}
+\include{Sections.tex/Abstract.tex}
 \addcontentsline{toc}{section}{\protect\numberline{}{Zusammenfassung}}
 \markright{Zusammenfassung}
-\include{Zusammenfassung}
+\include{Sections.tex/Zusammenfassung.tex}
 
 % Table of contents
 \newpage
@@ -117,7 +117,7 @@
 \addcontentsline{toc}{section}{\protect\numberline{}{Notation}}
 \addtocontents{toc}{\vspace{.5\baselineskip}}
 \markright{Notation}
-\include{Notation}
+\include{Sections.tex/Notation.tex}
 
 
 % This is the main part of the thesis. Pages appear with arabic numbering.
@@ -126,15 +126,15 @@
 \pagenumbering{arabic}
 
 % Main body
-\include{Introduction}
+\include{Sections.tex/Introduction.tex}
 
-\include{Stateoftheart}
+\include{Sections.tex/Stateoftheart}
 
-\include{Methods}
+\include{Sections.tex/Methods}
 
-\include{Tests}
+\include{Sections.tex/Tests}
 
-\include{SummaryAndContributions}
+\include{Sections.tex/SummaryAndContributions}
 
 % Bibliography
 \newpage
@@ -146,17 +146,17 @@
 % Appendices (if needed)
 \addtocontents{toc}{\vspace{.5\baselineskip}}
 \appendix
-\include{Appendix}
-\include{Miscellaneous}
-\include{Examples}
-\include{Journal}
+\include{Sections.tex/Appendix}
+\include{Sections.tex/Miscellaneous}
+\include{Sections.tex/Examples}
+\include{Sections.tex/Journal}
 
 
 % Epilogue (optional)
 \addtocontents{toc}{\vspace{.5\baselineskip}}
 \addcontentsline{toc}{section}{\protect\numberline{}{Epilogue}}
 \markright{Epilogue}
-\include{Epilogue}
+\include{Sections.tex/Epilogue}
 
 
 \end{document}
